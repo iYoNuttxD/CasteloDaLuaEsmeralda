@@ -1,0 +1,435 @@
+body {
+    background-color: black;
+}
+footer {
+    color: white;
+    text-align: center;
+    margin: 25px;
+    font-family: Verdana;
+}
+
+div {
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 3px 3px 10px rgb(95, 220, 67);
+    margin-top: 10px;
+    text-align: center;
+}
+
+#gameinfo {
+    background-color: rgb(108, 105, 105);
+    padding-left: 5px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: -10px 0px 20px 0px rgba(49, 181, 49, 0.8), 10px 0px 20px 0px rgba(255, 0, 0, 0.8);
+}
+
+#gameEinfo {
+    background-color: rgb(55, 57, 128);
+    padding-left: 5px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    box-shadow: -10px 0px 20px 0px rgba(255, 0, 0, 0.8), 10px 0px 20px 0px rgba(255, 0, 0, 0.8);
+    display: none;
+}
+
+#gameElife {
+    color: rgb(0, 255, 0);
+    font-family: Verdana;
+    display: inline;
+    margin-right: 10px;
+    float: left; 
+}
+
+#gameEname {
+    color: rgb(255, 255, 255);
+    font-family: Verdana;
+    display: inline-block;
+    margin-right: 10px;
+    align-items: center;
+    text-align: center;
+}
+
+#gameEdamage {
+    color: rgb(255, 0, 0);
+    font-family: Verdana;
+    display: inline;
+    margin-right: 10px;
+    float: right;
+}
+
+#gametitle {
+    color: rgb(235, 163, 94);
+    text-align: center;
+    font-family: Verdana;
+}
+
+#gameimg {
+    height: 300px;
+    width: 600px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: auto;
+    border: 3px solid rgb(232, 135, 45);
+    border-radius: 5px;
+}
+
+#gamelife {
+    color: rgb(49, 181, 49);
+    font-family: Verdana;
+    display: inline;
+    margin-right: 10px;
+    float: left;
+}
+
+#gamename {
+    color: black;
+    font-family: Verdana;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+#gamecoin {
+    color: rgb(185, 50, 50);
+    font-family: Verdana;
+    display: inline;
+    margin-right: 10px;
+    float: right;
+}
+
+p {
+    font-family: Verdana;
+}
+
+input {
+    background-color: rgb(198, 237, 237);
+    border: 1px solid black;
+    border-radius: 3px;
+    font-family: Verdana;
+    display: inline;
+}
+
+#gamebutton {
+    display: inline;
+    border-radius: 5px;
+    border: 2px solid green;
+    font-family: Verdana;
+    background-color: rgb(227, 237, 237);
+}
+
+#gameweapon1 {
+    display: none;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 2px solid rgb(35, 149, 219);
+    font-family: Verdana;
+    background-color: rgb(227, 237, 237);
+}
+
+#gameweapon2 {
+    margin-top: 10px;
+    display: none;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 2px solid rgb(238, 224, 61);
+    font-family: Verdana;
+    background-color: rgb(227, 237, 237);
+}
+
+#gameweapon3 {
+    margin-top: 10px;
+    display: none;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 2px solid rgb(237, 128, 19);
+    font-family: Verdana;
+    background-color: rgb(227, 237, 237);
+}
+
+#gamepotion {
+    margin-top: 10px;
+    display: none;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 2px solid rgb(255, 0, 0);
+    font-family: Verdana;
+    background-color: rgb(227, 237, 237);
+}
+
+#gameshield {
+    margin-top: 10px;
+    display: none;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 2px solid rgb(115, 177, 198);
+    font-family: Verdana;
+    background-color: rgb(227, 237, 237);
+}
+
+#gamestart0 {
+    display: none;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 2px solid rgb(64, 238, 61);
+    font-family: Verdana;
+    background-color: rgb(227, 237, 237);
+}
+
+#gameend0 {
+    display: none;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 2px solid rgb(238, 34, 34);
+    font-family: Verdana;
+    background-color: rgb(227, 237, 237);
+}
+
+#gameend2 {
+    display: none;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 2px solid rgb(238, 34, 34);
+    font-family: Verdana;
+    background-color: rgb(227, 237, 237);
+}
+
+#gamerestart {
+    display: none;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 2px solid rgb(238, 139, 34);
+    font-family: Verdana;
+    background-color: rgb(227, 237, 237);
+}
+
+#gamecontinue {
+    display: none;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 2px solid rgb(64, 238, 61);
+    font-family: Verdana;
+    background-color: rgb(227, 237, 237);
+}
+
+#gamestart01 {
+    display: none;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 2px solid rgb(64, 238, 61);
+    font-family: Verdana;
+    background-color: rgb(227, 237, 237);
+}
+
+#gamestart1 {
+    display: none;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 2px solid rgb(64, 238, 61);
+    font-family: Verdana;
+    background-color: rgb(227, 237, 237);
+}
+
+#gamereturn {
+    display: none;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 2px solid rgb(64, 238, 61);
+    font-family: Verdana;
+    background-color: rgb(227, 237, 237);
+}
+
+#gamestart2 {
+    display: none;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 2px solid rgb(64, 238, 61);
+    font-family: Verdana;
+    background-color: rgb(227, 237, 237);
+}
+
+#gamestart3 {
+    display: none;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 2px solid rgb(64, 238, 61);
+    font-family: Verdana;
+    background-color: rgb(227, 237, 237);
+}
+
+#gameend1 {
+    display: none;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 2px solid rgb(238, 34, 34);
+    font-family: Verdana;
+    background-color: rgb(227, 237, 237);
+}
+
+#gamenorth {
+    display: none;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 2px solid rgb(238, 34, 34);
+    font-family: Verdana;
+    background-color: rgb(227, 237, 237);
+}
+
+#gamesouth {
+    display: none;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 2px solid rgb(34, 173, 238);
+    font-family: Verdana;
+    background-color: rgb(227, 237, 237);
+}
+
+#gamewest {
+    display: none;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 2px solid rgb(238, 177, 34);
+    font-family: Verdana;
+    background-color: rgb(227, 237, 237);
+}
+
+#gamewest {
+    display: none;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 2px solid rgb(238, 177, 34);
+    font-family: Verdana;
+    background-color: rgb(227, 237, 237);
+}
+
+#gameeast {
+    display: none;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 2px solid rgb(65, 186, 43);
+    font-family: Verdana;
+    background-color: rgb(227, 237, 237);
+}
+
+#gamedialog1, #gamedialog2, #gamedialog3, #gamedialog4 {
+    display: none;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 2px solid rgb(65, 186, 43);
+    font-family: Verdana;
+    background-color: rgb(227, 237, 237);
+}
+
+#gamedrink1 {
+    display: none;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 2px solid rgb(115, 177, 198);
+    font-family: Verdana;
+    background-color: rgb(227, 237, 237);
+    margin-top: 5px;
+}
+
+#gamedrink2  {
+    display: none;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 2px solid rgb(238, 34, 34);
+    font-family: Verdana;
+    background-color: rgb(227, 237, 237);
+    margin-top: 3px;
+}
+
+#gamedrink3 {
+    display: none;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 2px solid black;
+    font-family: Verdana;
+    background-color: rgb(227, 237, 237);
+    margin-top: 3px;
+}
+
+#gameend3 {
+    display: none;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 2px solid rgb(238, 34, 34);
+    font-family: Verdana;
+    background-color: rgb(227, 237, 237);
+}
+
+#gamefight1 {
+    display: none;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 2px solid rgb(34, 238, 61);
+    font-family: Verdana;
+    background-color: rgb(227, 237, 237);
+}
+
+#gamefight2 {
+    display: none;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 2px solid rgb(238, 34, 34);
+    font-family: Verdana;
+    background-color: rgb(227, 237, 237);
+}
+
+#gamefight0 {
+    display: none;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 2px solid rgb(0, 0, 0);
+    font-family: Verdana;
+    background-color: rgb(227, 237, 237);
+}
+
+#gamerun1 {
+    display: none;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 2px solid rgb(0, 0, 0);
+    font-family: Verdana;
+    background-color: rgb(227, 237, 237);
+}
+
+#gameeat {
+    display: none;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 2px solid rgb(30, 106, 221);
+    font-family: Verdana;
+    background-color: rgb(227, 237, 237);
+}
+
+#gamekey {
+    display: none;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 2px solid rgb(238, 184, 34);
+    font-family: Verdana;
+    background-color: rgb(227, 237, 237);
+}
+
+#gamecheast {
+    display: none;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 2px solid rgb(238, 184, 34);
+    font-family: Verdana;
+    background-color: rgb(227, 237, 237);
+}
+
+#gameswamp {
+    display: none;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 2px solid rgb(30, 106, 221);
+    font-family: Verdana;
+    background-color: rgb(227, 237, 237);
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/aventura.css">
+    <link rel="icon" href="../Imagens/icon.png" type="image/png">
+    <title>O Castelo da Lua Esmeralda</title>
+</head>
+<body>
+    <h1 id="gametitle">Taberna do Dragão Dourado</h1>
+    <img src="../Imagens/taverna.jpg" id="gameimg">
+    <div>
+        <section id="gameEinfo">
+            <p id="gameElife">Vida: 100</p> <p id="gameEname">Vor'thul</p> <p id="gameEdamage">Dano: 25</p>
+        </section>
+        <section id="gameinfo">
+            <p id="gamelife">Vida: 100</p> <p id="gamename">Aventureiro</p> <p id="gamecoin">Moeda: 0</p>
+        </section>
+        <p id="gametext">Olá aventureiro. Antes de começar, por favor indique seu nome!</p>
+        <input type="text" name="avname" id="avname">
+        <button type="submit" onclick="avname()" id="gamebutton" title="Pressione o Botão ou Pressione a Tecla Enter">Enter: Enviar</button>
+        <button type="submit" onclick="avposition(3)" id="gamereturn" title="Pressione o Botão ou Pressione a Tecla ESC">ESC: Retornar</button>
+        <button type="submit" onclick="avweapon(1)" id="gameweapon1"title="Pressione o Botão ou Pressione a Tecla 1">1: Estrela da Aurora Flamejante: 7 Dano + 10 Escudo</button>
+        <button type="submit" onclick="avweapon(2)" id="gameweapon2" title="Pressione o Botão ou Pressione a Tecla 2">2: Cortador de Carvalho Feroz: 8 Dano + 50 Moedas</button>
+        <button type="submit" onclick="avstart(0)" id="gamestart0">Continuar</button>
+        <button type="submit" onclick="avstart(1)" id="gamestart01" title="Pressione o Botão ou Pressione a Tecla Enter">Enter: Aceito</button>
+        <button type="submit" onclick="avstart(1)" id="gamestart1" title="Pressione o Botão ou Pressione a Tecla ESC">ESC: Retornar</button>
+        <button type="submit" onclick="avend(1)" id="gameend1" title="Pressione o Botão ou Pressione a Tecla Shift">Shift: Não aceito</button>
+        <button type="submit" onclick="restart()" id="gamerestart" title="Pressione o Botão ou Pressione a Tecla Enter">Enter: Reniciar</button>
+        <button type="submit" onclick="avposition(1)" id="gamenorth" title="Pressione o Botão ou Pressione a Tecla W">W: Norte</button>
+        <button type="submit" onclick="avposition(2)" id="gamesouth" title="Pressione o Botão ou Pressione a Tecla S">S: Sul</button>
+        <button type="submit" onclick="avposition(3)" id="gameeast" title="Pressione o Botão ou Pressione a Tecla D">D: Leste</button>
+        <button type="submit" onclick="avposition(4)" id="gamewest" title="Pressione o Botão ou Pressione a Tecla A">A: Oeste</button>
+        <button type="submit" onclick="avdialog(1)" id="gamedialog1" title="Pressione o Botão ou Pressione a Tecla Enter">Enter: Conversar</button>
+        <button type="submit" onclick="avdialog(2)" id="gamedialog2" title="Pressione o Botão ou Pressione a Tecla Enter">Enter: Conversar</button>
+        <button type="submit" onclick="avdialog(3)" id="gamedialog3" title="Pressione o Botão ou Pressione a Tecla Enter">Enter: Conversar</button>
+        <button type="submit" onclick="avend(2)" id="gameend2" title="Pressione o Botão ou Pressione a Tecla Shift">Shift: Desistir</button>
+        <br>
+        <button type="submit" onclick="avstore(1)" title="Cura 30 de Vida / Pressione o Botão ou Pressione a Tecla 1" id='gamepotion' >1: Poção de Cura Vital - 20 Moedas</button>
+        <button type="submit" onclick="avstore(2)" title="Adiciona 20 de Vida Bônus / Pressione o Botão ou Pressione a Tecla 2" id='gameshield'>2: Escudo de Ônix - 30 Moedas</button>
+        <button type="submit" onclick="avstore(3)" title="Causa 12 de Dano / Pressione o Botão ou Pressione a Tecla 3" id='gameweapon3'>3: Lâmina do Destino Eterno - 50 Moedas</button>
+        <button type="submit" onclick="avtavern(1)" id="gamedrink1" title="Adiciona 10 de Vida Bônus / Pressione o Botão ou Pressione a Tecla 1">1: Elixir Guardião - 15 Moedas</button>
+        <button type="submit" onclick="avtavern(2)" id="gamedrink2" title="Cura 10 de Vida / Pressione o Botão ou Pressione a Tecla 2">2: Néctar da Revigoração - 10 Moedas</button>
+        <button type="submit" onclick="avtavern(3)" id="gamedrink3" title="Compre para Descobrir / Pressione o Botão ou Pressione a Tecla 3">3: Bebida da Sombra Lunar - 25 Moedas</button>
+        <button type="submit" onclick="avdialog(4)" id="gamedialog4" title="Pressione o Botão ou Pressione a Tecla Enter">Enter: Ir a Aventura</button>
+        <button type="submit" onclick="avend(3)" id="gameend3" title="Pressione o Botão ou Pressione a Tecla Shift">Shift: Não ir</button>
+        <button type="submit" onclick="avfight()" id="gamefight0" title="Pressione o Botão ou Pressione a Tecla Enter">Enter: Lutar</button>
+        <button type="submit" onclick="avrandom()" id="gamerun1" title="Pressione o Botão ou Pressione a Tecla Shift">Shift: Correr</button>
+        <button type="submit" onclick="avfight(1)" id="gamefight1" title="Pressione o Botão ou Pressione a Tecla C">C: Atacar</button>
+        <button type="submit" onclick="avfight(2)" id="gamefight2" title="Pressione o Botão ou Pressione a Tecla V">V: Curar</button>
+        <button type="submit" onclick="avstart(2)" id="gamestart2" title="Pressione o Botão ou Pressione a Tecla ESC">ESC: Retornar</button>
+        <button type="submit" onclick="avstart(3)" id="gamestart3" title="Pressione o Botão ou Pressione a Tecla ESC">ESC: Retornar</button>
+        <button type="submit" onclick="aveat()" id="gameeat" title="Pressione o Botão ou Pressione a Tecla Enter"> Enter: Comer Fruto</button>
+        <button type="submit" onclick="avcheast()" id="gamecheast" title="Pressione o Botão ou Pressione a Tecla Enter">Enter: Coletar Tesouros</button>
+        <button type="submit" onclick="avkey()" id="gamekey" title="Pressione o Botão ou Pressione a Tecla Enter">Enter: Coletar Chave</button>
+        <button type="submit" onclick="avposition(1)" id="gameswamp" title="Pressione o Botão ou Pressione a Tecla Enter">Enter: Continuar Ao Norte</button>
+    </div>
+    <footer>&copy;Daniel Ganz Musse <br> &copy;Gabriel Lunardon Trevisan</footer>
+    <script src="../JS/aventura.js"></script>
+</body>
+</html>
